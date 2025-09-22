@@ -23,7 +23,7 @@ website:
     foreground: primary 
     search: true
     contents:
-      - section: "Intro"
+      - section: "Getting Started"
         contents:
           - expectations.qmd
           - management.qmd
@@ -33,15 +33,41 @@ website:
           - bioinformatics.qmd
           - twine.qmd
           - RStudio.qmd
-      - section: "Thesis preparation"
+      - section: "General Thesis Writing"
         contents:
           - writingtips.qmd
           - WritingExercises-overview.qmd
+          - AI.qmd
+      - section: "Guidance on Specific Thesis Sections"
+        contents:
           - figures.qmd
           - methods.qmd
       - section: "Presentations"
         contents:
           - slides.qmd
+
+# Add custom callouts
+custom-callout:
+  callout-data:
+    icon-symbol: "📊"
+    title: "Data Analysis"
+    color: "#32CD32"
+  callout-check:
+    title: "Comprehension check:"
+    icon-symbol: "✨"
+    color: "#BA55D3"
+  callout-microbe:
+    title: "Microbe Profile"
+    icon-symbol: "🧫"
+    color: "#1E90FF"
+  callout-todo:
+    title: "To do:"
+    icon-symbol: "📝"
+    color: "pink"
+
+filters:
+  - custom-callout
+
 format:
   html:
     theme: pulse
